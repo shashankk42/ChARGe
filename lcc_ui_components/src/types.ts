@@ -29,6 +29,13 @@ export interface OrchestratorSettings {
   apiKey: string;
   backendLabel: string;
   toolServers?: ToolServer[];
+
+  // RSA settings
+  useRsa?: boolean;
+  rsaMode?: 'standalone' | 'rag';
+  rsaN?: number;
+  rsaK?: number;
+  rsaT?: number;
 }
 
 export interface BackendOption {
